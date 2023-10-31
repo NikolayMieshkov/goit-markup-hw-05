@@ -775,7 +775,6 @@ fill: transparent;
 .modal-span-privacy {
     display: inline-flex;
 }
-.
 .check-input:checked + .check-text span {
     background-color: #404BBF;
     border: none;
