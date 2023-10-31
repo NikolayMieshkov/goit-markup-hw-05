@@ -582,21 +582,25 @@
                     id="user-comment"
                     placeholder="Text input"
                     ></textarea>                 
-                
-                <div class="modal-btn-section">
-                  
-                    <input type="checkbox" name="modal-check" id="modal-check" class="check-input visually-hidden">
-                    <label for="modal-check" class="check-text">
-                      <span>
-                        <svg class="check-icon" width="10" height="10">
-                          <use href="./images/icons.svg#icon-check"></use>
-                          </svg>
-                      </span>I accept the terms and conditions of the
-                      <a href="#">Privacy Policy</a></label>
-
-                  <button type="submit" class="modal-btn-send">Send</button>
                 </div>
-            </div>        
+              <div class="modal-btn-section">
+                  
+                    <input 
+                    type="checkbox"
+                    name="user-privacy"
+                    id="user-privacy"
+                    value="true"
+                    class="check-input visually-hidden">
+                     <label for="user-privacy" class="check-text">
+                        <span>
+                          <svg class="check-icon" width="10" height="8">
+                            <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>I accept the terms and conditions of the
+                        <a href="#">Privacy Policy</a>
+                     </label>                  
+              </div>
+              <button type="submit" class="modal-btn-send">Send</button>
 
             </form>
           </div>
