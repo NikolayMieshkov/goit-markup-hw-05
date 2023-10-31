@@ -54,7 +54,7 @@ h2 {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-/* Header section */
+/************ Header section ************/
 .header-section {
    
     border-bottom: 1px solid rgba(231, 233, 252, 1);
@@ -158,7 +158,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
     
 }
-/* Hero section */
+/************ Hero section ************/
 
 .hero-section {
     max-width: 1440px;
@@ -212,7 +212,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--pressed-state-color);
     
 }
-/* About section */
+/************ About section ************/
 .about-section {
     
 }
@@ -275,7 +275,7 @@ color: var(--text-color)
 .about-note-text {
 
 }
-/* Team section */
+/************Team section ************/
 .team-section {
 background-color: var(--light-color);
 
@@ -450,7 +450,7 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
-/*** Footer section ***/
+/************** Footer section **************/
 .footer-section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -528,4 +528,253 @@ margin-bottom: 16px;
 .btn-social-footer:active {
   background-color: var(--success-color);
   
+}
+.footer-bottom {
+    margin-left: 80px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+   
+  .footer-subscribe-text {
+    margin-bottom: 20px;
+  }
+  .footer-input-btn {
+    display: flex;
+  }
+  .footer-input-label {
+    margin-right: 24px;
+  }
+  .footer-subscribe {
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: left;
+margin-bottom: 24px;
+  }
+  .footer-input {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    height: 40px;
+    background-color: transparent;
+    width: 264px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+  }
+  .footer-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .btn-footer-subscribe {
+    cursor: pointer;
+    background-color: #4D5AE5;
+    color: #fff;
+    min-width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    text-align: center;    
+  }  
+  .icon-footer-send {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+  }
+/*********** Modal ***********/
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+ }
+.modal {
+width: 408px;
+height: 584px;
+top: 80px;
+left: 516px;
+border-radius: 4px;
+background-color: var(--modal-background-color);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 72px 24px 24px 24px;
+}
+.btn-modal-close {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background-color: linear-gradient(0deg, #E7E9FC, #E7E9FC),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+.modal-close {
+    fill: var(--hero-background-color);
+}
+.btn-modal-close:hover,
+.btn-modal-close:focus,
+.btn-modal-close:active {
+    background-color: var(--pressed-state-color);  
+    fill: var(--white-background-color);  
+}
+
+.modal-title {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--hero-background-color);
+text-align: center;
+margin-bottom: 16px;
+}
+.modal-input-wrap {
+    position: relative;
+    
+}
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    outline: transparent;  
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    padding-left: 38px;
+}
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
+.modal-input:focus + .modal-icon {
+    fill: #4D5AE5;
+}
+.modal-label {
+    display: inline-block;
+}
+.modal-field {
+    margin-bottom: 8px;
+}
+.modal-icon {
+    fill:#2E2F42;
+    position: absolute;
+    left: 19px;    
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-text {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid #2E2F4266;
+    background-color: inherit;    
+font-size: 12px;
+font-weight: 400;
+line-height: 1.16;
+letter-spacing: 0.04em;
+text-align: left;
+padding: 8px 16px;
+outline: transparent; 
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+resize: none;
+}
+.modal-text:focus {
+    border-color: #4D5AE5;
+}
+.check-text {
+font-size: 12px;
+font-weight: 400;
+line-height: 1.33;
+letter-spacing: 0.04em;
+text-align: left;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 16px;
+}
+.check-text a{
+color: #4D5AE5;
+text-decoration: underline;
+
+}
+.comment {
+    margin-bottom: 0;
+}
+.check-text span {
+width: 16px;
+height: 16px;
+border-radius: 2px;
+border: 1px solid #2E2F4266;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 8px;
+fill: transparent;
+
+}
+.check-input:checked + .check-text span {
+    background-color: #404BBF;
+    border: 1px solid #404BBF;
+    fill: #F4F4FD;
+}
+.modal-btn-send {
+min-width: 169px;
+height:56px;
+padding: 16px, 32px;
+margin-top: 24px;
+border-radius: 4px;
+background-color: #4D5AE5;
+box-shadow: 0px 4px 4px 0px #00000026;
+border: none;
+color: #FFFFFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn-send:hover,
+.modal-btn-send:focus,
+.modal-btn-send:active {
+background-color: var(--pressed-state-color);    
+}
+.modal-btn-section {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.is-open {
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
 }
