@@ -767,19 +767,24 @@ transition:
 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
 border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-display: inline-flex;
 align-items: center;
 justify-content: center;
 margin-right: 8px;
 fill: transparent;
-
 }
+.modal-span-privacy {
+    display: inline-flex;
+}
+.
 .check-input:checked + .check-text span {
     background-color: #404BBF;
-    border: 1px solid #404BBF;
+    border: none;
     fill: #F4F4FD;
+
 }
 .modal-btn-send {
+display: block;
+margin: 0 auto;
 min-width: 169px;
 height:56px;
 padding: 16px, 32px;
@@ -801,13 +806,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-btn-send:active {
 background-color: var(--pressed-state-color);    
 }
-.modal-btn-section {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-bottom: 24px;
-}
+
 .is-open {
 opacity: 1;
 visibility: visible;
