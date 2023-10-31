@@ -529,6 +529,11 @@ margin-bottom: 16px;
   background-color: var(--success-color);
   
 }
+/* Footer Bottom */
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
 .footer-bottom {
     margin-left: 80px;
     display: block;
@@ -551,7 +556,8 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: left;
-margin-bottom: 24px;
+margin-bottom: 16px;
+color: #fff;
   }
   .footer-input {
     color: #fff;
