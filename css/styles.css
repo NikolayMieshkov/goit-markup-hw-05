@@ -759,7 +759,7 @@ text-decoration: underline;
     margin-bottom: 16px;
 }
 
-.modal-privacy span{
+.modal-privacy {
 width: 16px;
 height: 16px;
 border-radius: 2px;
